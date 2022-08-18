@@ -127,29 +127,35 @@ Output:
 
 // ************** Exercise 1 ***************
 
-let letter = "A";
+// let letter = "A";
 
-switch (letter) {
-    case "A":
-    case "E":
-    case "I":
-    case "O":
-    case "U":
-        console.log(letter + " is a vowel");
-        break;
-    default:
-        console.log(Letter + " Is not a Vowel");
-        break;
+// switch (letter) {
+//     case "A":
+//     case "E":
+//     case "I":
+//     case "O":
+//     case "U":
+//         console.log(letter + " is a vowel");
+//         break;
+//     default:
+//         console.log(Letter + " Is not a Vowel");
+//         break;
+// }
+// // ************ Exercise 2 Ternary Operator ************
+
+// let number = 3;
+
+// oddEven = number % 2 === 0 ? "It's even" : "It's odd";
+// console.log(oddEven);
+
+
+const checkObj = {
+    oddNum: 1,
+    evenNum: 2,
+    foundNum: 5,
+    randomNum: 18
 }
-// ************ Exercise 2 Ternary Operator ************
-
-let number = 3;
-
-oddEven = number % 2 === 0 ? "It's even" : "It's odd";
-console.log(oddEven);
-
-
-
+let found = 0;
 
 
 
