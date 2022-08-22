@@ -423,13 +423,7 @@ let cat2 = {
 };
 
 // // 3. Combine the two cats into one object
-// // const combineCats = (mama, papa) => {
-// //     console.log(mama);
-// //     console.log(papa);
-// // }
-// // console.log(combineCats(cat1, cat2));
 
-// combine the two cats into an object
 function combineCats(mama, papa) {
 	let twoCats = {
 		age: 1,
