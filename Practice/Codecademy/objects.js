@@ -8,10 +8,10 @@ JavaScript objects are containers storing related data and functionality,
 
 // Write your fasterShip object literal below
 
-let fasterShip = {
-  color: 'silver',
-  'Fuel Type': 'Turbo Fuel'
-}
+// let fasterShip = {
+//   color: 'silver',
+//   'Fuel Type': 'Turbo Fuel'
+// }
 
 // Accessing Properties (3/10)
 // Using Dot notation
