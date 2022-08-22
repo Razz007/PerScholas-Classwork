@@ -333,52 +333,52 @@ A. Q&A
 // ***** Objects *****
 
 // A. Make a user object
-const user = {
-	name: "Razz",
-	email: "itsomn@perscholas.com",
-	age: 55,
-	purchased: [],
-};
+// const user = {
+// 	name: "Razz",
+// 	email: "itsomn@perscholas.com",
+// 	age: 55,
+// 	purchased: [],
+// };
 
-// B. Update the user
-user.email = "someoneelse@perscholas.com"; // (1)
-user.age++; // (2)
+// // B. Update the user
+// user.email = "someoneelse@perscholas.com"; // (1)
+// user.age++; // (2)
 
-// C. Adding keys and values
-user.location = "some-or-other location";
+// // C. Adding keys and values
+// user.location = "some-or-other location";
 
-// D. shopaholic!
-user.purchased.push("carbohydrates"); // (1)
+// // D. shopaholic!
+// user.purchased.push("carbohydrates"); // (1)
 
-user.purchased.push("peace of mind"); // (2)
+// user.purchased.push("peace of mind"); // (2)
 
-user.purchased.push("Merino jodhpurs"); // (3)
-// console.log(user.purchased[2]);  // (4)
-// console.log(user);
+// user.purchased.push("Merino jodhpurs"); // (3)
+// // console.log(user.purchased[2]);  // (4)
+// // console.log(user);
 
-// E. Object-within-objec
-user.friend = {
-	// (1) add friend to user objec
-	name: "Marco",
-	age: 42,
-	location: "Tha Moon",
-	purchased: [],
-};
-// console.log(user.friend.name);  // (2) print friends name
+// // E. Object-within-objec
+// user.friend = {
+// 	// (1) add friend to user objec
+// 	name: "Marco",
+// 	age: 42,
+// 	location: "Tha Moon",
+// 	purchased: [],
+// };
+// // console.log(user.friend.name);  // (2) print friends name
 
-// console.log(user.friend.location);  // (3) print friends location
+// // console.log(user.friend.location);  // (3) print friends location
 
-user.friend.age = 55; // (4) change friends age to 55
+// user.friend.age = 55; // (4) change friends age to 55
 
-user.friend.purchased.push("The One Ring"); // (5) add "The One Ring" to friends purchased array
+// user.friend.purchased.push("The One Ring"); // (5) add "The One Ring" to friends purchased array
 
-user.friend.purchased.push("A Latte"); // (6) add "A Latte to friends purchased array"
+// user.friend.purchased.push("A Latte"); // (6) add "A Latte to friends purchased array"
 
-// console.log(user.friend.purchased[1]);  // (7) print friends "A latte"
+// // console.log(user.friend.purchased[1]);  // (7) print friends "A latte"
 
-// F. Loops
+// // F. Loops
 
-// (1) create a for lop that iterates through the user.purchased array and prints each item in the array
+// // (1) create a for lop that iterates through the user.purchased array and prints each item in the array
 // for (let i = 0; i < user.purchased.length; i++) {
 //     console.log(user.purchased[i]);
 // }
@@ -405,7 +405,6 @@ user.friend.purchased.push("A Latte"); // (6) add "A Latte to friends purchased 
 // oldAndLoud(user);
 
 // ***** Hungry for  more *****
-
 // Cat combinator
 
 // Mama cat
@@ -414,34 +413,34 @@ let cat1 = {
 	age: 7,
 	breed: "Persian",
 };
-// console.log(cat1.age, cat1.breed);
+// // console.log(cat1.age, cat1.breed);
 
-// Papa cat
+// // Papa cat
 let cat2 = {
 	name: "Whiskers",
 	age: 10,
 	breed: "Mixed",
 };
 
-// 3. Combine the two cats into one object
-// const combineCats = (mama, papa) => {
-//     console.log(mama);
-//     console.log(papa);
-// }
-// console.log(combineCats(cat1, cat2));
+// // 3. Combine the two cats into one object
+// // const combineCats = (mama, papa) => {
+// //     console.log(mama);
+// //     console.log(papa);
+// // }
+// // console.log(combineCats(cat1, cat2));
 
 // combine the two cats into an object
-const combineCats = (mama, papa) => {
-	cat1.age = 0;
-	cat2.age = 1;
-	return {
-		name: mama.name + papa.name,
-		age: mama.age + papa.age,
-		breed: mama.breed + "-" + papa.breed,
+function combineCats(mama, papa) {
+	let twoCats = {
+		age: 1,
+	name: mama.name + papa.name,
+	breed: mama.breed + "-" + papa.breed
 	};
+	return twoCats;
 };
 
-// 4. Cat brain bender
+// // 4. Cat brain bender
+
 console.log(
 	combineCats(
 		combineCats(cat1, cat2),
@@ -457,3 +456,6 @@ console.log(
 		)
 	)
 );
+
+
+console.log(combineCats(cat1, cat2));
