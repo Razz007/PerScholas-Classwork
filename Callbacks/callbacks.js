@@ -74,4 +74,7 @@ const panagram = ["The", "quick", "brown", "fox", "jumps", "over", "the", "lazy"
 // const concat = panagram.reduce((acumulator, word) => acumulator + " " + word, "");
 // console.log(concat);
 
-// .sort() Method
+// nums.sort();
+// middleIndex = Math.floor(nums.length / 2);
+// console.log(nums[middleIndex]);
+
