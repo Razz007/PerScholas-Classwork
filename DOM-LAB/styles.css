@@ -1,21 +1,21 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-/* CSS Custom Properties */
 :root {
     --main-bg: #4a4e4d;
     --top-menu-bg: #0e9aa7;
     --sub-menu-bg: #3da4ab;
 }
-
 body {
     font-family: Tahoma, Geneva, sans-serif;
     height: 100vh;
     margin: 0;
     display: grid;
     grid-template-rows: 3rem auto;
-    color: white;
+    color: #000;
 }
 
 .flex-ctr {
