@@ -58,12 +58,13 @@ const panagram = ["The", "quick", "brown", "fox", "jumps", "over", "the", "lazy"
 
 
 // .some() Method tests whether at least one element passes the test implemented by the callback function. Returns a boolean value
+
 // const divBy7 = (element) => element % 7 === 0;
 // const haveLetter = element => element.includes("a","A");
 // console.log(panagram.some(haveLetter));
 // console.log(nums.some(divBy7));
 
-// .reduce() Method
+// *****.reduce() Method *****
 
 // add all the numbers in the array
 // const initialVals = 0;
@@ -74,7 +75,17 @@ const panagram = ["The", "quick", "brown", "fox", "jumps", "over", "the", "lazy"
 // const concat = panagram.reduce((acumulator, word) => acumulator + " " + word, "");
 // console.log(concat);
 
-// nums.sort();
-// middleIndex = Math.floor(nums.length / 2);
-// console.log(nums[middleIndex]);
 
+// .sort() Method
+
+// sort nums array in ascending order
+console.log(nums.sort((a, b) => a - b));
+
+// sort nums array in descending order
+console.log(nums.sort((a, b) => a - b).reverse());
+
+// sort panagram array in ascending order
+console.log(panagram.sort((a, b) => a - b));
+
+// sort panagram array in descending order
+console.log(panagram.sort((a, b) => a - b).reverse());
